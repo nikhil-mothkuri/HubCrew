@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubCrew Talent Solutions — Brand Guidelines & Identity System</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: var(--bg-secondary);
+      padding: 40px 0;
+    }
+    .guideline-sheet {
+      background: var(--bg-card-solid);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-lg);
+      padding: 60px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin: 24px 0 40px;
+    }
+    .color-swatch {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-primary);
+    }
+    .swatch-color {
+      height: 90px;
+      width: 100%;
+    }
+    .swatch-meta {
+      padding: 12px;
+      font-size: 0.8rem;
+    }
+    .swatch-title {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .swatch-hex {
+      color: var(--text-tertiary);
+      font-family: monospace;
+    }
+    .rule-card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="btn-apple btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Website
+      </a>
+      <button onclick="window.print()" class="btn-apple btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print / Save Brand PDF
+      </button>
+    </div>
+
+    <div class="guideline-sheet">
+      <!-- Header -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 32px; border-bottom: 2px solid var(--border-subtle); margin-bottom: 40px;">
+        <div>
+          <img src="assets/logo.svg" alt="HubCrew Talent Solutions" style="height: 48px; margin-bottom: 12px;">
+          <h1 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;">Brand Identity & Guidelines</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">HubCrew Talent Solutions LLP • Version 1.0 (Apple Aesthetic Standard)</p>
+        </div>
+        <div style="text-align: right;">
+          <span class="eyebrow eyebrow-pill">Official Standard</span>
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 6px;">Domain: hubcrewtech.com<br>Hyderabad, India</p>
+        </div>
+      </div>
+
+      <!-- Section 1: Logo Lockups -->
+      <section style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 16px;">1. Logo Lockups & Clear Space</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+          <div class="rule-card" style="text-align: center; background: #FFFFFF;">
+            <img src="assets/logo.svg" alt="Primary Logo" style="height: 40px; margin: 20px auto;">
+            <strong style="font-size: 0.85rem; color: #1D1D1F;">Primary Horizontal Lockup</strong>
+            <p style="font-size: 0.75rem; color: #6E6E73; margin-top: 4px;">Use on light, clean surfaces</p>
+          </div>
+          <div class="rule-card" style="text-align: center; background: #0A0A0C;">
+            <img src="assets/logo-dark.svg" alt="Dark Logo" style="height: 40px; margin: 20px auto;">
+            <strong style="font-size: 0.85rem; color: #F5F5F7;">Dark Mode Lockup</strong>
+            <p style="font-size: 0.75rem; color: #86868B; margin-top: 4px;">Use on space grey / dark surfaces</p>
+          </div>
+          <div class="rule-card" style="text-align: center;">
+            <img src="assets/logo-icon.svg" alt="Icon Mark" style="height: 48px; width: 48px; margin: 16px auto;">
+            <strong style="font-size: 0.85rem; color: var(--text-primary);">Icon / Squircle Mark</strong>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">Favicon, social avatar & app icon</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Color Palette -->
+      <section style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 8px;">2. Apple-Calibrated Color Palette</h2>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">Modern high-contrast palette engineered for B2B authority, digital clarity, and executive appeal.</p>
+        
+        <div class="palette-grid">
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #0071E3;"></div>
+            <div class="swatch-meta">
+              <div class="swatch-title">Apple Electric Blue</div>
+              <div class="swatch-hex">#0071E3</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #2997FF;"></div>
+            <div class="swatch-meta">
+              <div class="swatch-title">Vibrant Sky Blue</div>
+              <div class="swatch-hex">#2997FF</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #1D1D1F;"></div>
+            <div class="swatch-meta">
+              <div class="swatch-title">Space Grey Charcoal</div>
+              <div class="swatch-hex">#1D1D1F</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #F5F5F7;"></div>
+            <div class="swatch-meta">
+              <div class="swatch-title">Off-White Surface</div>
+              <div class="swatch-hex">#F5F5F7</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #5856D6;"></div>
+            <div class="swatch-meta">
+              <div class="swatch-title">Executive Purple</div>
+              <div class="swatch-hex">#5856D6</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Typography Hierarchy -->
+      <section style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 16px;">3. Typography Hierarchy</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="rule-card">
+            <span class="eyebrow" style="font-size: 0.75rem;">Primary Typeface</span>
+            <h3 style="font-size: 1.6rem; font-weight: 700; margin: 8px 0;">San Francisco / Inter</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              Headlines: Bold / SemiBold (600-800) with tight tracking (-0.03em).<br>
+              Body Copy: Regular / Medium (400-500) with generous 1.55 line height.
+            </p>
+          </div>
+          <div class="rule-card">
+            <span class="eyebrow" style="font-size: 0.75rem;">Brand Tone of Voice</span>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin: 8px 0;">Executive, Precise, Authoritative</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              Punchy, direct, data-backed. Focus on velocity, retention metrics, and organizational scalability. Avoid recruitment clichés.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Brand Value Slogan -->
+      <div style="padding: 24px; background: var(--accent-blue-subtle); border-radius: var(--radius-lg); border: 1px solid var(--border-medium); text-align: center;">
+        <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-blue); margin-bottom: 6px;">Core Brand Mantra</div>
+        <div style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">"Precision talent. Scaled seamlessly."</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Apple Theme Switcher Dock -->
+  <aside class="floating-theme-dock" aria-label="Page Theme Switcher">
+    <div class="theme-segmented-switch">
+      <button class="theme-segment-btn" data-theme="light" title="Light Theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+        </svg>
+        <span>Light</span>
+      </button>
+      <button class="theme-segment-btn" data-theme="dark" title="Dark Theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span>Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
