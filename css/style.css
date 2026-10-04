@@ -1,42 +1,42 @@
 /* ==========================================================================
-   HubCrew Talent Solutions - Apple Inspired Design System
+   HubCrew Talent Solutions - White + Cobalt Design System
    ========================================================================== */
 
 :root {
-  /* Apple Light Palette */
+  /* White + Cobalt Light Palette */
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F5F5F7;
-  --bg-tertiary: #E8E8ED;
-  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-secondary: #F4F7FC;
+  --bg-tertiary: #E8EEF8;
+  --bg-card: rgba(255, 255, 255, 0.9);
   --bg-card-solid: #FFFFFF;
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --bg-glass: rgba(255, 255, 255, 0.72);
-  --nav-bg: rgba(255, 255, 255, 0.82);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-glass: rgba(255, 255, 255, 0.82);
+  --nav-bg: rgba(255, 255, 255, 0.88);
   
-  --text-primary: #1D1D1F;
-  --text-secondary: #6E6E73;
-  --text-tertiary: #86868B;
+  --text-primary: #0B132B;
+  --text-secondary: #50607A;
+  --text-tertiary: #7E8DA4;
   --text-inverse: #FFFFFF;
   
-  --accent-blue: #0071E3;
-  --accent-blue-hover: #0077ED;
-  --accent-blue-subtle: rgba(0, 113, 227, 0.08);
-  --accent-purple: #5856D6;
-  --accent-indigo: #5E5CE6;
-  --accent-gradient: linear-gradient(135deg, #0071E3 0%, #2997FF 50%, #5856D6 100%);
+  --accent-blue: #0047AB;
+  --accent-blue-hover: #003888;
+  --accent-blue-subtle: rgba(0, 71, 171, 0.08);
+  --accent-purple: #1D4ED8;
+  --accent-indigo: #2563EB;
+  --accent-gradient: linear-gradient(135deg, #0047AB 0%, #2563EB 50%, #1D4ED8 100%);
   --accent-gold: #C5A059;
   --accent-gold-gradient: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
   
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-medium: rgba(0, 0, 0, 0.14);
-  --border-glass: rgba(255, 255, 255, 0.6);
-  --border-focus: rgba(0, 113, 227, 0.4);
+  --border-subtle: rgba(0, 71, 171, 0.09);
+  --border-medium: rgba(0, 71, 171, 0.16);
+  --border-glass: rgba(255, 255, 255, 0.7);
+  --border-focus: rgba(0, 71, 171, 0.45);
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.08);
-  --shadow-hover: 0 24px 60px rgba(0, 113, 227, 0.12);
-  --shadow-glow: 0 0 30px rgba(0, 113, 227, 0.25);
+  --shadow-sm: 0 2px 8px rgba(11, 19, 43, 0.04);
+  --shadow-md: 0 8px 24px rgba(11, 19, 43, 0.06);
+  --shadow-lg: 0 20px 48px rgba(11, 19, 43, 0.08);
+  --shadow-hover: 0 24px 60px rgba(0, 71, 171, 0.16);
+  --shadow-glow: 0 0 32px rgba(0, 71, 171, 0.28);
   
   --radius-xs: 6px;
   --radius-sm: 12px;
@@ -54,39 +54,39 @@
 }
 
 [data-theme="dark"] {
-  /* Apple Dark / Space Grey / Titanium Palette */
-  --bg-primary: #000000;
-  --bg-secondary: #0D0D11;
-  --bg-tertiary: #16161A;
-  --bg-card: rgba(28, 28, 32, 0.75);
-  --bg-card-solid: #1C1C1E;
-  --bg-card-hover: rgba(36, 36, 42, 0.9);
-  --bg-glass: rgba(20, 20, 24, 0.75);
-  --nav-bg: rgba(10, 10, 14, 0.82);
+  /* Midnight Cobalt / Dark Slate Palette */
+  --bg-primary: #060B14;
+  --bg-secondary: #0B1322;
+  --bg-tertiary: #121D33;
+  --bg-card: rgba(14, 25, 45, 0.75);
+  --bg-card-solid: #0F1B30;
+  --bg-card-hover: rgba(20, 35, 62, 0.9);
+  --bg-glass: rgba(11, 19, 34, 0.8);
+  --nav-bg: rgba(6, 11, 20, 0.88);
   
-  --text-primary: #F5F5F7;
-  --text-secondary: #A1A1A6;
-  --text-tertiary: #6E6E73;
-  --text-inverse: #000000;
+  --text-primary: #F0F4FA;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --text-inverse: #060B14;
   
-  --accent-blue: #2997FF;
-  --accent-blue-hover: #47A3FF;
-  --accent-blue-subtle: rgba(41, 151, 255, 0.12);
-  --accent-purple: #AF52DE;
-  --accent-indigo: #7D7AFF;
-  --accent-gradient: linear-gradient(135deg, #2997FF 0%, #0A84FF 50%, #5E5CE6 100%);
+  --accent-blue: #388BFD;
+  --accent-blue-hover: #58A6FF;
+  --accent-blue-subtle: rgba(56, 139, 253, 0.14);
+  --accent-purple: #60A5FA;
+  --accent-indigo: #818CF8;
+  --accent-gradient: linear-gradient(135deg, #388BFD 0%, #1F6FEB 50%, #79B8FF 100%);
   --accent-gold: #DFBA73;
   
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.16);
-  --border-glass: rgba(255, 255, 255, 0.12);
-  --border-focus: rgba(41, 151, 255, 0.5);
+  --border-subtle: rgba(56, 139, 253, 0.12);
+  --border-medium: rgba(56, 139, 253, 0.22);
+  --border-glass: rgba(56, 139, 253, 0.15);
+  --border-focus: rgba(56, 139, 253, 0.55);
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.7);
-  --shadow-hover: 0 24px 60px rgba(41, 151, 255, 0.18);
-  --shadow-glow: 0 0 35px rgba(41, 151, 255, 0.35);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.75);
+  --shadow-hover: 0 24px 60px rgba(31, 111, 235, 0.28);
+  --shadow-glow: 0 0 35px rgba(56, 139, 253, 0.35);
 }
 
 /* ==========================================================================
@@ -393,7 +393,7 @@ button, input, select, textarea {
 }
 
 [data-theme="dark"] .theme-segment-btn.active {
-  background: #2C2C2E;
+  background: #182542;
   color: #FFFFFF;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
@@ -437,7 +437,7 @@ button, input, select, textarea {
 
 .btn-primary:hover {
   background: var(--accent-blue-hover);
-  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 71, 171, 0.4);
   transform: translateY(-1px);
 }
 
@@ -495,13 +495,13 @@ button, input, select, textarea {
   transform: translateX(-50%);
   width: 900px;
   height: 550px;
-  background: radial-gradient(circle, rgba(0, 113, 227, 0.16) 0%, rgba(88, 86, 214, 0.08) 40%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(0, 71, 171, 0.18) 0%, rgba(37, 99, 235, 0.08) 45%, rgba(255,255,255,0) 70%);
   pointer-events: none;
   z-index: 0;
 }
 
 [data-theme="dark"] .hero-glow-bg {
-  background: radial-gradient(circle, rgba(41, 151, 255, 0.22) 0%, rgba(94, 92, 230, 0.12) 45%, rgba(0,0,0,0) 75%);
+  background: radial-gradient(circle, rgba(56, 139, 253, 0.22) 0%, rgba(30, 96, 255, 0.12) 45%, rgba(0,0,0,0) 75%);
 }
 
 .hero-content {
@@ -691,9 +691,9 @@ button, input, select, textarea {
 }
 
 .bento-card.featured-dark {
-  background: linear-gradient(145deg, #11141E 0%, #080A0F 100%);
+  background: linear-gradient(145deg, #0B1326 0%, #060A14 100%);
   color: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(56, 139, 253, 0.2);
 }
 
 .bento-card.featured-dark .bento-text {
@@ -991,7 +991,7 @@ button, input, select, textarea {
 
 /* DEI & Strategic Consulting Banner */
 .dei-banner-card {
-  background: linear-gradient(135deg, rgba(0, 113, 227, 0.05) 0%, rgba(88, 86, 214, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(0, 71, 171, 0.06) 0%, rgba(37, 99, 235, 0.09) 100%);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-xl);
   padding: 40px;
@@ -1003,8 +1003,8 @@ button, input, select, textarea {
 }
 
 [data-theme="dark"] .dei-banner-card {
-  background: linear-gradient(135deg, rgba(41, 151, 255, 0.08) 0%, rgba(94, 92, 230, 0.12) 100%);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(56, 139, 253, 0.1) 0%, rgba(30, 96, 255, 0.15) 100%);
+  border-color: rgba(56, 139, 253, 0.2);
 }
 
 /* ==========================================================================
@@ -1196,7 +1196,7 @@ button, input, select, textarea {
   border-radius: 50%;
   background: var(--accent-blue);
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 113, 227, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 71, 171, 0.4);
   transition: transform var(--transition-fast);
 }
 
@@ -1379,8 +1379,8 @@ button, input, select, textarea {
 }
 
 .brand-preview-box.dark-bg {
-  background: #0A0A0C;
-  border-color: rgba(255, 255, 255, 0.12);
+  background: #070E1E;
+  border-color: rgba(56, 139, 253, 0.2);
 }
 
 .brand-preview-caption {
@@ -1775,8 +1775,8 @@ button, input, select, textarea {
   background: var(--accent-blue-subtle);
   font-weight: 600;
   color: var(--text-primary);
-  border-left: 1px solid rgba(0, 113, 227, 0.2);
-  border-right: 1px solid rgba(0, 113, 227, 0.2);
+  border-left: 1px solid rgba(0, 71, 171, 0.2);
+  border-right: 1px solid rgba(0, 71, 171, 0.2);
 }
 
 .comparison-table tr:last-child td {

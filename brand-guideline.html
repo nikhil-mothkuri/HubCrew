@@ -7,7 +7,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
@@ -34,6 +34,11 @@
       overflow: hidden;
       border: 1px solid var(--border-subtle);
       background: var(--bg-primary);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-fast);
+    }
+    .color-swatch:hover {
+      transform: translateY(-2px);
     }
     .swatch-color {
       height: 90px;
@@ -50,6 +55,8 @@
     .swatch-hex {
       color: var(--text-tertiary);
       font-family: monospace;
+      font-size: 0.85rem;
+      margin-top: 2px;
     }
     .rule-card {
       background: var(--bg-secondary);
@@ -79,7 +86,7 @@
         <div>
           <img src="assets/logo.svg" alt="HubCrew Talent Solutions" style="height: 48px; margin-bottom: 12px;">
           <h1 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;">Brand Identity & Guidelines</h1>
-          <p style="color: var(--text-secondary); font-size: 0.95rem;">HubCrew Talent Solutions LLP • Version 1.0 (Apple Aesthetic Standard)</p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">HubCrew Talent Solutions LLP • Version 1.2 (White + Cobalt Signature Standard)</p>
         </div>
         <div style="text-align: right;">
           <span class="eyebrow eyebrow-pill">Official Standard</span>
@@ -93,61 +100,61 @@
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
           <div class="rule-card" style="text-align: center; background: #FFFFFF;">
             <img src="assets/logo.svg" alt="Primary Logo" style="height: 40px; margin: 20px auto;">
-            <strong style="font-size: 0.85rem; color: #1D1D1F;">Primary Horizontal Lockup</strong>
-            <p style="font-size: 0.75rem; color: #6E6E73; margin-top: 4px;">Use on light, clean surfaces</p>
+            <strong style="font-size: 0.85rem; color: #0B132B;">Primary Horizontal Lockup</strong>
+            <p style="font-size: 0.75rem; color: #5A6B82; margin-top: 4px;">Use on crisp white & light cobalt ice surfaces</p>
           </div>
-          <div class="rule-card" style="text-align: center; background: #0A0A0C;">
+          <div class="rule-card" style="text-align: center; background: #070E1E;">
             <img src="assets/logo-dark.svg" alt="Dark Logo" style="height: 40px; margin: 20px auto;">
-            <strong style="font-size: 0.85rem; color: #F5F5F7;">Dark Mode Lockup</strong>
-            <p style="font-size: 0.75rem; color: #86868B; margin-top: 4px;">Use on space grey / dark surfaces</p>
+            <strong style="font-size: 0.85rem; color: #F0F4FA;">Dark Mode Lockup</strong>
+            <p style="font-size: 0.75rem; color: #94A3B8; margin-top: 4px;">Use on midnight cobalt / deep slate surfaces</p>
           </div>
           <div class="rule-card" style="text-align: center;">
             <img src="assets/logo-icon.svg" alt="Icon Mark" style="height: 48px; width: 48px; margin: 16px auto;">
             <strong style="font-size: 0.85rem; color: var(--text-primary);">Icon / Squircle Mark</strong>
-            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">Favicon, social avatar & app icon</p>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">Favicon, social avatar & app mark</p>
           </div>
         </div>
       </section>
 
       <!-- Section 2: Color Palette -->
       <section style="margin-bottom: 48px;">
-        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 8px;">2. Apple-Calibrated Color Palette</h2>
-        <p style="color: var(--text-secondary); font-size: 0.9rem;">Modern high-contrast palette engineered for B2B authority, digital clarity, and executive appeal.</p>
+        <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 8px;">2. White + Cobalt Color System</h2>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">Clean high-contrast palette engineered for B2B executive presence, high-velocity talent delivery, and digital authority.</p>
         
         <div class="palette-grid">
           <div class="color-swatch">
-            <div class="swatch-color" style="background: #0071E3;"></div>
+            <div class="swatch-color" style="background: #FFFFFF; border-bottom: 1px solid rgba(0,71,171,0.1);"></div>
             <div class="swatch-meta">
-              <div class="swatch-title">Apple Electric Blue</div>
-              <div class="swatch-hex">#0071E3</div>
+              <div class="swatch-title">Pure White</div>
+              <div class="swatch-hex">#FFFFFF</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-color" style="background: #2997FF;"></div>
+            <div class="swatch-color" style="background: #0047AB;"></div>
             <div class="swatch-meta">
-              <div class="swatch-title">Vibrant Sky Blue</div>
-              <div class="swatch-hex">#2997FF</div>
+              <div class="swatch-title">True Cobalt Blue</div>
+              <div class="swatch-hex">#0047AB</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-color" style="background: #1D1D1F;"></div>
+            <div class="swatch-color" style="background: #2563EB;"></div>
             <div class="swatch-meta">
-              <div class="swatch-title">Space Grey Charcoal</div>
-              <div class="swatch-hex">#1D1D1F</div>
+              <div class="swatch-title">Electric Cobalt</div>
+              <div class="swatch-hex">#2563EB</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-color" style="background: #F5F5F7;"></div>
+            <div class="swatch-color" style="background: #0B132B;"></div>
             <div class="swatch-meta">
-              <div class="swatch-title">Off-White Surface</div>
-              <div class="swatch-hex">#F5F5F7</div>
+              <div class="swatch-title">Midnight Cobalt</div>
+              <div class="swatch-hex">#0B132B</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-color" style="background: #5856D6;"></div>
+            <div class="swatch-color" style="background: #F0F4FA; border-bottom: 1px solid rgba(0,71,171,0.1);"></div>
             <div class="swatch-meta">
-              <div class="swatch-title">Executive Purple</div>
-              <div class="swatch-hex">#5856D6</div>
+              <div class="swatch-title">Cobalt Ice Surface</div>
+              <div class="swatch-hex">#F0F4FA</div>
             </div>
           </div>
         </div>
@@ -176,7 +183,7 @@
       </section>
 
       <!-- Section 4: Brand Value Slogan -->
-      <div style="padding: 24px; background: var(--accent-blue-subtle); border-radius: var(--radius-lg); border: 1px solid var(--border-medium); text-align: center;">
+      <div style="padding: 28px; background: var(--accent-blue-subtle); border-radius: var(--radius-lg); border: 1px solid var(--border-medium); text-align: center;">
         <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-blue); margin-bottom: 6px;">Core Brand Mantra</div>
         <div style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">"Precision talent. Scaled seamlessly."</div>
       </div>
@@ -184,7 +191,7 @@
     </div>
   </div>
 
-  <!-- Floating Apple Theme Switcher Dock -->
+  <!-- Floating Theme Switcher Dock -->
   <aside class="floating-theme-dock" aria-label="Page Theme Switcher">
     <div class="theme-segmented-switch">
       <button class="theme-segment-btn" data-theme="light" title="Light Theme">

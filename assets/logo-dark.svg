@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50" fill="none">
   <defs>
     <linearGradient id="primaryHubGradDark" x1="6" y1="6" x2="38" y2="38" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2997FF"/>
-      <stop offset="60%" stop-color="#0A84FF"/>
-      <stop offset="100%" stop-color="#5E5CE6"/>
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
     </linearGradient>
   </defs>
 
   <!-- Icon Mark (Squircle + Hub Network) -->
   <g transform="translate(4, 5)">
-    <rect x="0" y="0" width="40" height="40" rx="10" fill="#1C1C1E"/>
-    <rect x="0" y="0" width="40" height="40" rx="10" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="#0B1322"/>
+    <rect x="0" y="0" width="40" height="40" rx="10" stroke="rgba(59,130,246,0.3)" stroke-width="1"/>
     
     <!-- Stylized Hub Nodes -->
     <rect x="10" y="10" width="4" height="20" rx="2" fill="url(#primaryHubGradDark)"/>
     <rect x="26" y="10" width="4" height="20" rx="2" fill="url(#primaryHubGradDark)"/>
     <path d="M12 20h16" stroke="url(#primaryHubGradDark)" stroke-width="4" stroke-linecap="round"/>
     <circle cx="20" cy="20" r="3" fill="#FFFFFF"/>
-    <circle cx="12" cy="10" r="2" fill="#64D2FF"/>
-    <circle cx="28" cy="30" r="2" fill="#64D2FF"/>
+    <circle cx="12" cy="10" r="2" fill="#93C5FD"/>
+    <circle cx="28" cy="30" r="2" fill="#93C5FD"/>
   </g>
 
   <!-- Typography -->
   <g transform="translate(56, 12)">
-    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#F5F5F7">
-      Hub<tspan fill="#2997FF">Crew</tspan>
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#F0F4FA">
+      Hub<tspan fill="#3B82F6">Crew</tspan>
     </text>
-    <text x="1" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif" font-size="8" font-weight="600" letter-spacing="2.8" fill="#86868B" text-transform="uppercase">
+    <text x="1" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif" font-size="8" font-weight="600" letter-spacing="2.8" fill="#94A3B8" text-transform="uppercase">
       TALENT SOLUTIONS
     </text>
   </g>
