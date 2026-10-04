@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubCrew Talent Solutions — Bespoke Logo Identity Concepts</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: var(--bg-secondary);
+      padding: 40px 0 80px;
+    }
+    .options-hero {
+      text-align: center;
+      max-width: 840px;
+      margin: 0 auto 50px;
+    }
+    .concepts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+    .concept-card {
+      background: var(--bg-card-solid);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all var(--transition-normal);
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-lg);
+    }
+    .concept-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--accent-blue-subtle);
+      color: var(--accent-blue);
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+    .preview-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .preview-box {
+      border-radius: var(--radius-md);
+      padding: 30px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      border: 1px solid var(--border-subtle);
+      transition: all var(--transition-fast);
+    }
+    .preview-box.light {
+      background: #FFFFFF;
+    }
+    .preview-box.dark {
+      background: #070E1E;
+      border-color: rgba(56, 139, 253, 0.2);
+    }
+    .concept-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .concept-rationale {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .concept-meta-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .meta-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+    }
+    .action-bar {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    @media (max-width: 900px) {
+      .concepts-grid {
+        grid-template-columns: 1fr;
+      }
+      .preview-split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation back -->
+    <div style="margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="btn-apple btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Website
+      </a>
+      <a href="brand-guideline.html" class="btn-apple btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 9h6"/><path d="M15 15h6"/></svg>
+        Brand Guidelines
+      </a>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="options-hero">
+      <span class="eyebrow eyebrow-pill">Exclusive Brand Identity Concepts</span>
+      <h1 class="section-headline" style="margin-top: 12px;">Bespoke Logo Concepts for HubCrew.</h1>
+      <p class="section-subhead" style="margin: 0 auto;">
+        Engineered specifically for <strong>HubCrew Talent Solutions</strong> using our signature <strong>White + Cobalt</strong> design language. Each mark is 100% original, geometrically balanced, and crafted for enterprise scale.
+      </p>
+    </div>
+
+    <!-- 4 Logo Concepts Grid -->
+    <div class="concepts-grid">
+      
+      <!-- Concept 1: The Kinetic Hub Nexus -->
+      <div class="concept-card">
+        <span class="concept-badge">Concept 01 • Recommended</span>
+        <h2 class="concept-title">The Kinetic Hub Nexus</h2>
+        <p class="concept-rationale">
+          Features a stylized orbital "C" arc converging into vertical "H" pillars around an illuminated white fusion core. Represents continuous candidate flow, pod agility, and precision talent orchestration.
+        </p>
+
+        <div class="preview-split">
+          <div class="preview-box light">
+            <img src="assets/logo-options/concept1-kinetic-nexus.svg" alt="Concept 1 Light" style="max-height: 46px; width: auto;">
+          </div>
+          <div class="preview-box dark">
+            <img src="assets/logo-options/concept1-kinetic-nexus-dark.svg" alt="Concept 1 Dark" style="max-height: 46px; width: auto;">
+          </div>
+        </div>
+
+        <div class="concept-meta-tags">
+          <span class="meta-tag">Orbital Nexus</span>
+          <span class="meta-tag">Talent Flow</span>
+          <span class="meta-tag">Tech-Forward</span>
+          <span class="meta-tag">White + Cobalt</span>
+        </div>
+
+        <div class="action-bar">
+          <a href="assets/logo-options/concept1-kinetic-nexus.svg" download="HubCrew_Logo_Concept1_Light.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Light)
+          </a>
+          <a href="assets/logo-options/concept1-kinetic-nexus-dark.svg" download="HubCrew_Logo_Concept1_Dark.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Dark)
+          </a>
+        </div>
+      </div>
+
+      <!-- Concept 2: The Precision Hexagon Pod -->
+      <div class="concept-card">
+        <span class="concept-badge">Concept 02 • Enterprise Architecture</span>
+        <h2 class="concept-title">The Precision Hexagon Pod</h2>
+        <p class="concept-rationale">
+          An architectural isometric facet system combining structured structural pillars with a dynamic 45° upward growth chevron. Ideal for highlighting institutional stability, Enterprise RPO, and GCC setups.
+        </p>
+
+        <div class="preview-split">
+          <div class="preview-box light">
+            <img src="assets/logo-options/concept2-hex-pod.svg" alt="Concept 2 Light" style="max-height: 46px; width: auto;">
+          </div>
+          <div class="preview-box dark">
+            <img src="assets/logo-options/concept2-hex-pod-dark.svg" alt="Concept 2 Dark" style="max-height: 46px; width: auto;">
+          </div>
+        </div>
+
+        <div class="concept-meta-tags">
+          <span class="meta-tag">Isometric Hexagon</span>
+          <span class="meta-tag">Enterprise RPO</span>
+          <span class="meta-tag">Architectural</span>
+          <span class="meta-tag">Executive Bold</span>
+        </div>
+
+        <div class="action-bar">
+          <a href="assets/logo-options/concept2-hex-pod.svg" download="HubCrew_Logo_Concept2_Light.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Light)
+          </a>
+          <a href="assets/logo-options/concept2-hex-pod-dark.svg" download="HubCrew_Logo_Concept2_Dark.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Dark)
+          </a>
+        </div>
+      </div>
+
+      <!-- Concept 3: The Interlocking Monogram Ribbon -->
+      <div class="concept-card">
+        <span class="concept-badge">Concept 03 • Minimalist Elegance</span>
+        <h2 class="concept-title">Interlocking Monogram Ribbon</h2>
+        <p class="concept-rationale">
+          A seamless single-loop vector ribbon flowing between the letters "H" and "C" in continuous harmony. Minimalist, premium, and sophisticated — evoking high-end executive search and modern tech leadership.
+        </p>
+
+        <div class="preview-split">
+          <div class="preview-box light">
+            <img src="assets/logo-options/concept3-monogram-ribbon.svg" alt="Concept 3 Light" style="max-height: 46px; width: auto;">
+          </div>
+          <div class="preview-box dark">
+            <img src="assets/logo-options/concept3-monogram-ribbon-dark.svg" alt="Concept 3 Dark" style="max-height: 46px; width: auto;">
+          </div>
+        </div>
+
+        <div class="concept-meta-tags">
+          <span class="meta-tag">Infinity Loop</span>
+          <span class="meta-tag">HC Monogram</span>
+          <span class="meta-tag">Executive Search</span>
+          <span class="meta-tag">Apple Minimal</span>
+        </div>
+
+        <div class="action-bar">
+          <a href="assets/logo-options/concept3-monogram-ribbon.svg" download="HubCrew_Logo_Concept3_Light.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Light)
+          </a>
+          <a href="assets/logo-options/concept3-monogram-ribbon-dark.svg" download="HubCrew_Logo_Concept3_Dark.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Dark)
+          </a>
+        </div>
+      </div>
+
+      <!-- Concept 4: The Dual-Pulse Constellation -->
+      <div class="concept-card">
+        <span class="concept-badge">Concept 04 • Synergy & Fusion</span>
+        <h2 class="concept-title">The Dual-Pulse Constellation</h2>
+        <p class="concept-rationale">
+          Symmetrical ascending and descending pods interlocking over an energized center node. Symbolizes the handshake between client enterprises and elite candidate talent, anchored by technological synergy.
+        </p>
+
+        <div class="preview-split">
+          <div class="preview-box light">
+            <img src="assets/logo-options/concept4-dual-pulse.svg" alt="Concept 4 Light" style="max-height: 46px; width: auto;">
+          </div>
+          <div class="preview-box dark">
+            <img src="assets/logo-options/concept4-dual-pulse-dark.svg" alt="Concept 4 Dark" style="max-height: 46px; width: auto;">
+          </div>
+        </div>
+
+        <div class="concept-meta-tags">
+          <span class="meta-tag">Synergy Pods</span>
+          <span class="meta-tag">Human + Tech</span>
+          <span class="meta-tag">Network Pulse</span>
+          <span class="meta-tag">High Velocity</span>
+        </div>
+
+        <div class="action-bar">
+          <a href="assets/logo-options/concept4-dual-pulse.svg" download="HubCrew_Logo_Concept4_Light.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Light)
+          </a>
+          <a href="assets/logo-options/concept4-dual-pulse-dark.svg" download="HubCrew_Logo_Concept4_Dark.svg" class="btn-apple btn-secondary" style="flex: 1; font-size: 0.8rem;">
+            Download SVG (Dark)
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Call to action / instruction banner -->
+    <div style="background: var(--bg-card-solid); border-radius: var(--radius-xl); border: 1px solid var(--border-subtle); padding: 40px; text-align: center; box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 8px;">Which concept resonates best for HubCrew?</h3>
+      <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 24px; font-size: 0.95rem;">
+        Let us know which concept you prefer (or any adjustments you'd like to the mark, geometry, or typography), and we will set it as the live primary logo across the entire site and digital assets.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn-apple btn-primary">Return to Homepage</a>
+        <a href="brand-guideline.html" class="btn-apple btn-secondary">View Brand Guidelines</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Floating Theme Switcher Dock -->
+  <aside class="floating-theme-dock" aria-label="Page Theme Switcher">
+    <div class="theme-segmented-switch">
+      <button class="theme-segment-btn" data-theme="light" title="Light Theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+        </svg>
+        <span>Light</span>
+      </button>
+      <button class="theme-segment-btn" data-theme="dark" title="Dark Theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span>Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

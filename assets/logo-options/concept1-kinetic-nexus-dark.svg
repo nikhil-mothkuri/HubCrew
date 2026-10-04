@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 54" width="260" height="54" fill="none">
+  <defs>
+    <linearGradient id="opt1GradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6, 5)">
+    <rect x="0" y="0" width="44" height="44" rx="12" fill="#0B1322"/>
+    <rect x="0" y="0" width="44" height="44" rx="12" stroke="rgba(59,130,246,0.3)" stroke-width="1"/>
+    <path d="M33 14 A 14 14 0 1 0 33 30" stroke="url(#opt1GradDark)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M16 16 L16 28" stroke="url(#opt1GradDark)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M26 16 L26 28" stroke="url(#opt1GradDark)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M16 22 L26 22" stroke="url(#opt1GradDark)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="21" cy="22" r="2.5" fill="#FFFFFF"/>
+    <circle cx="33" cy="14" r="2" fill="#93C5FD"/>
+    <circle cx="33" cy="30" r="2" fill="#93C5FD"/>
+  </g>
+  <g transform="translate(62, 14)">
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#F0F4FA">
+      Hub<tspan fill="#3B82F6">Crew</tspan>
+    </text>
+    <text x="1" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif" font-size="8" font-weight="600" letter-spacing="2.8" fill="#94A3B8" text-transform="uppercase">
+      TALENT SOLUTIONS
+    </text>
+  </g>
+</svg>

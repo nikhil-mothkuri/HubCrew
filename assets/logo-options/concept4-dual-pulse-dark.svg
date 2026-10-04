@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 54" width="260" height="54" fill="none">
+  <defs>
+    <linearGradient id="opt4GradDark1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="opt4GradDark2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6, 5)">
+    <rect x="0" y="0" width="44" height="44" rx="12" fill="#0B1322"/>
+    <rect x="0" y="0" width="44" height="44" rx="12" stroke="rgba(59,130,246,0.3)" stroke-width="1"/>
+    <rect x="12" y="14" width="4.5" height="18" rx="2.25" fill="url(#opt4GradDark1)"/>
+    <path d="M14 23 L23 16" stroke="url(#opt4GradDark1)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M23 28 L32 21" stroke="url(#opt4GradDark2)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="29.5" y="12" width="4.5" height="18" rx="2.25" fill="url(#opt4GradDark2)"/>
+    <circle cx="23" cy="22" r="3.8" fill="url(#opt4GradDark1)" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="23" cy="22" r="1.5" fill="#FFFFFF"/>
+    <circle cx="14.25" cy="14" r="1.8" fill="#93C5FD"/>
+    <circle cx="31.75" cy="30" r="1.8" fill="#93C5FD"/>
+  </g>
+  <g transform="translate(62, 14)">
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4" fill="#F0F4FA">
+      Hub<tspan fill="#3B82F6">Crew</tspan>
+    </text>
+    <text x="1" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif" font-size="8" font-weight="600" letter-spacing="2.8" fill="#94A3B8" text-transform="uppercase">
+      TALENT SOLUTIONS
+    </text>
+  </g>
+</svg>

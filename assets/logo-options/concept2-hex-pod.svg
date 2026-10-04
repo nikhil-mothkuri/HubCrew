@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 54" width="260" height="54" fill="none">
+  <defs>
+    <linearGradient id="opt2GradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0047AB"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="opt2GradB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#0047AB"/>
+    </linearGradient>
+    <linearGradient id="opt2GradC" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#002D72"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Concept 2 Icon: Precision Hexagon Pod (Interlocking Isometric Facets) -->
+  <g transform="translate(6, 5)">
+    <!-- Hexagonal Outer Container -->
+    <rect x="0" y="0" width="44" height="44" rx="12" fill="#070E1E"/>
+    <rect x="0" y="0" width="44" height="44" rx="12" stroke="rgba(37,99,235,0.3)" stroke-width="1"/>
+    
+    <!-- Isometric Hexagonal HC Facets -->
+    <!-- Left Stem (H pillar) -->
+    <path d="M14 13 L20 10 L20 34 L14 31 Z" fill="url(#opt2GradA)"/>
+    
+    <!-- Right C-Wrap Arc Segment -->
+    <path d="M24 10 L30 13 L30 19 L24 16 Z" fill="url(#opt2GradB)"/>
+    <path d="M24 28 L30 25 L30 31 L24 34 Z" fill="url(#opt2GradB)"/>
+    
+    <!-- Central Connecting Talent Bridge -->
+    <path d="M20 20 L27 16 L27 22 L20 26 Z" fill="url(#opt2GradC)"/>
+    
+    <!-- Precision Apex Dot -->
+    <circle cx="27" cy="19" r="2.2" fill="#FFFFFF"/>
+    <circle cx="14" cy="13" r="1.8" fill="#60A5FA"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(62, 14)">
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="800" letter-spacing="-0.3" fill="#0B132B">
+      Hub<tspan fill="#0047AB">Crew</tspan>
+    </text>
+    <text x="1" y="32" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif" font-size="8" font-weight="600" letter-spacing="2.8" fill="#50607A" text-transform="uppercase">
+      TALENT SOLUTIONS
+    </text>
+  </g>
+</svg>
