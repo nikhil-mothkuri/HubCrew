@@ -1,6 +1,6 @@
 /* ==========================================================================
    HUBCREW TALENT SOLUTIONS - DESIGN SYSTEM & STYLESHEET
-   Brand Palette: Parchment (#F6F1E7), Navy (#14213D), Warm Gold (#B8892B)
+   Signature Brand Palette: Crisp White Base (#FFFFFF) & Cobalt Blue (#0047AB)
    Typography: Fraunces (Headings/Brand), Inter (Body/UI)
    ========================================================================== */
 
@@ -10,40 +10,55 @@
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 
-  /* Light Theme Palette (Parchment & Gold) */
-  --bg: #F6F1E7;
-  --bg-subtle: #EFE8DA;
-  --card: #FDFAF3;
+  /* Signature White & Cobalt Blue Palette */
+  --bg: #FFFFFF;                      /* Pure crisp white base */
+  --bg-subtle: #F6F8FC;               /* Clean soft icy-slate tint for alternating surfaces */
+  --card: #FFFFFF;                    /* Crisp white cards */
   --card-hover: #FFFFFF;
-  --ink: #14213D;
-  --ink-secondary: #2C3E63;
-  --mut: #566074;
-  --mut-light: #7E8B9F;
-  --gold: #B8892B;
-  --gold-hover: #9E7422;
-  --gold-light: rgba(184, 137, 43, 0.12);
-  --gold-border: rgba(184, 137, 43, 0.35);
-  --goldt: #8A6414;
-  --line: #DDD3BE;
-  --line-light: #ECE5D5;
-  --navy: #14213D;
-  --navy-light: #1E2D52;
-  --onnavy: #F6F1E7;
-  --onnavy-mut: #A8B5CD;
+  --ink: #0B132B;                     /* Deep midnight ink for razor-sharp typography */
+  --ink-secondary: #2C3E55;           /* Rich readable slate text */
+  --mut: #50607A;                     /* Muted slate for secondary labels and hints */
+  --mut-light: #7E8DA4;               /* Light slate */
   
-  /* Status & Accents */
-  --badge-live-bg: #14213D;
-  --badge-live-text: #F6F1E7;
-  --badge-next-bg: rgba(184, 137, 43, 0.14);
-  --badge-next-text: #8A6414;
-  --success: #1E7E48;
-  --success-bg: #EAF7EE;
+  /* Vibrant Cobalt Blue System */
+  --cobalt: #0047AB;                  /* Official Cobalt Blue */
+  --cobalt-hover: #003688;            /* Deep Cobalt Hover */
+  --cobalt-light: rgba(0, 71, 171, 0.08); /* Subtle Cobalt tint for highlights & hover */
+  --cobalt-border: rgba(0, 71, 171, 0.22);/* Soft Cobalt border */
+  --cobalt-glow: 0 6px 20px rgba(0, 71, 171, 0.25);
+  
+  /* Compatibility aliases mapping to Cobalt Blue */
+  --gold: var(--cobalt);
+  --gold-hover: var(--cobalt-hover);
+  --gold-light: var(--cobalt-light);
+  --gold-border: var(--cobalt-border);
+  --goldt: var(--cobalt);
 
-  /* Elevation Shadows */
-  --shadow-sm: 0 2px 6px rgba(20, 33, 61, 0.04);
-  --shadow-md: 0 8px 20px rgba(20, 33, 61, 0.08);
-  --shadow-lg: 0 16px 36px rgba(20, 33, 61, 0.12);
-  --shadow-gold: 0 6px 20px rgba(184, 137, 43, 0.25);
+  /* Crisp Modern Borders & Dividers */
+  --line: #E2E8F0;
+  --line-light: #F1F5F9;
+
+  /* Header & Contrast Surfaces */
+  --header-bg: rgba(255, 255, 255, 0.96);
+  --navy: #0B132B;                    /* Deep contrast midnight navy for hero band & footer */
+  --navy-light: #121D38;
+  --onnavy: #FFFFFF;
+  --onnavy-mut: #94A3B8;
+
+  /* Status & Accents */
+  --badge-live-bg: var(--cobalt);
+  --badge-live-text: #FFFFFF;
+  --badge-next-bg: rgba(0, 71, 171, 0.1);
+  --badge-next-text: var(--cobalt);
+  --success: #10B981;
+  --success-bg: #ECFDF5;
+
+  /* Elevation Shadows tuned for crisp white backgrounds */
+  --shadow-sm: 0 2px 8px rgba(11, 19, 43, 0.04);
+  --shadow-md: 0 8px 24px rgba(11, 19, 43, 0.06);
+  --shadow-lg: 0 20px 48px rgba(11, 19, 43, 0.09);
+  --shadow-cobalt: 0 6px 20px rgba(0, 71, 171, 0.25);
+  --shadow-gold: var(--shadow-cobalt);
 
   /* Radii & Transitions */
   --radius-sm: 6px;
@@ -56,76 +71,6 @@
   /* Typography */
   --font-serif: 'Fraunces', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-/* ==========================================================================
-   Dark Theme Overrides (Midnight Navy & Bright Gold)
-   ========================================================================== */
-:root[data-theme="dark"],
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E1730;
-    --bg-subtle: #091024;
-    --card: #16213F;
-    --card-hover: #1C2B52;
-    --ink: #F1EBDD;
-    --ink-secondary: #D4CDBC;
-    --mut: #A9B2C4;
-    --mut-light: #7D889E;
-    --gold: #D9AE55;
-    --gold-hover: #E4BD6B;
-    --gold-light: rgba(217, 174, 85, 0.16);
-    --gold-border: rgba(217, 174, 85, 0.42);
-    --goldt: #D9AE55;
-    --line: #243254;
-    --line-light: #1A2645;
-    --navy: #1B2A52;
-    --navy-light: #24376A;
-    --onnavy: #F1EBDD;
-    --onnavy-mut: #93A0BA;
-    --badge-live-bg: #D9AE55;
-    --badge-live-text: #0E1730;
-    --badge-next-bg: rgba(217, 174, 85, 0.18);
-    --badge-next-text: #D9AE55;
-    --success: #34D399;
-    --success-bg: rgba(52, 211, 153, 0.12);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
-    --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
-    --shadow-gold: 0 6px 20px rgba(217, 174, 85, 0.28);
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #0E1730;
-  --bg-subtle: #091024;
-  --card: #16213F;
-  --card-hover: #1C2B52;
-  --ink: #F1EBDD;
-  --ink-secondary: #D4CDBC;
-  --mut: #A9B2C4;
-  --mut-light: #7D889E;
-  --gold: #D9AE55;
-  --gold-hover: #E4BD6B;
-  --gold-light: rgba(217, 174, 85, 0.16);
-  --gold-border: rgba(217, 174, 85, 0.42);
-  --goldt: #D9AE55;
-  --line: #243254;
-  --line-light: #1A2645;
-  --navy: #1B2A52;
-  --navy-light: #24376A;
-  --onnavy: #F1EBDD;
-  --onnavy-mut: #93A0BA;
-  --badge-live-bg: #D9AE55;
-  --badge-live-text: #0E1730;
-  --badge-next-bg: rgba(217, 174, 85, 0.18);
-  --badge-next-text: #D9AE55;
-  --success: #34D399;
-  --success-bg: rgba(52, 211, 153, 0.12);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
-  --shadow-gold: 0 6px 20px rgba(217, 174, 85, 0.28);
 }
 
 /* ==========================================================================
@@ -360,12 +305,12 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--ink);
-  background: var(--gold-light);
+  color: var(--cobalt);
+  background: var(--cobalt-light);
 }
 
 nav a[aria-current="page"] {
-  color: var(--ink);
+  color: var(--cobalt);
   font-weight: 600;
 }
 
@@ -375,8 +320,8 @@ nav a[aria-current="page"]::after {
   bottom: 0;
   left: 12px;
   right: 12px;
-  height: 2px;
-  background: var(--gold);
+  height: 2.5px;
+  background: var(--cobalt);
   border-radius: 2px;
 }
 
@@ -384,34 +329,7 @@ nav a[aria-current="page"]::after {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-/* Theme Toggle Button */
-.theme-toggle-btn {
-  background: none;
-  border: 1px solid var(--line);
-  color: var(--ink);
-  padding: 8px 10px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all var(--tr-fast);
-}
-
-.theme-toggle-btn:hover {
-  border-color: var(--gold);
-  background: var(--gold-light);
-}
-
-.theme-toggle-btn svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
+  gap: 12px;
 }
 
 /* Mobile Hamburger */
@@ -454,8 +372,8 @@ nav a[aria-current="page"]::after {
 }
 
 .mobile-nav-drawer a[aria-current="page"] {
-  background: var(--gold-light);
-  color: var(--goldt);
+  background: var(--cobalt-light);
+  color: var(--cobalt);
   font-weight: 600;
 }
 
@@ -467,14 +385,14 @@ nav a[aria-current="page"]::after {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: var(--gold);
-  color: #14213D;
+  background: var(--cobalt);
+  color: #FFFFFF;
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.95rem;
   padding: 11px 22px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--gold);
+  border: 1px solid var(--cobalt);
   text-decoration: none;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
@@ -483,11 +401,11 @@ nav a[aria-current="page"]::after {
 }
 
 .btn:hover {
-  background: var(--gold-hover);
-  border-color: var(--gold-hover);
-  color: #14213D;
+  background: var(--cobalt-hover);
+  border-color: var(--cobalt-hover);
+  color: #FFFFFF;
   transform: translateY(-1px);
-  box-shadow: var(--shadow-gold);
+  box-shadow: var(--shadow-cobalt);
 }
 
 .btn:active {
@@ -495,16 +413,16 @@ nav a[aria-current="page"]::after {
 }
 
 .btn.o {
-  background: transparent;
-  border: 1px solid var(--line);
-  color: var(--ink);
+  background: #FFFFFF;
+  border: 1.5px solid var(--cobalt);
+  color: var(--cobalt);
   box-shadow: none;
 }
 
 .btn.o:hover {
-  border-color: var(--gold);
-  color: var(--ink);
-  background: var(--gold-light);
+  border-color: var(--cobalt);
+  color: var(--cobalt-hover);
+  background: var(--cobalt-light);
 }
 
 .btn.sm {
@@ -624,31 +542,38 @@ nav a[aria-current="page"]::after {
 }
 
 /* Dark Band / Corridor Callout */
+/* Dark Band / Corridor Callout */
 .band {
-  background: var(--navy);
-  color: var(--onnavy);
+  background: linear-gradient(135deg, #071530 0%, #003688 100%);
+  color: #FFFFFF;
   padding: 56px 0;
   border-radius: var(--radius-lg);
   margin: 48px 0 16px;
-  border: 1px solid var(--gold-border);
+  border: 1px solid rgba(0, 71, 171, 0.35);
   box-shadow: var(--shadow-md);
 }
 
 .band h2 {
-  color: var(--onnavy);
+  color: #FFFFFF;
 }
 
 .band p {
-  color: var(--onnavy);
-  opacity: 0.88;
+  color: #FFFFFF;
+  opacity: 0.9;
   font-size: 1.1rem;
   max-width: 60ch;
 }
 
 .band .btn {
-  background: var(--gold);
-  color: #14213D;
-  border-color: var(--gold);
+  background: #FFFFFF;
+  color: var(--cobalt);
+  border-color: #FFFFFF;
+}
+
+.band .btn:hover {
+  background: #F0F4FA;
+  color: var(--cobalt-hover);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .band-corridors {
@@ -666,9 +591,9 @@ nav a[aria-current="page"]::after {
   border-radius: var(--radius-pill);
   font-size: 0.82rem;
   font-weight: 500;
-  background: rgba(246, 241, 231, 0.12);
-  color: var(--onnavy);
-  border: 1px solid rgba(246, 241, 231, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /* Badges & Tags */
@@ -680,17 +605,17 @@ nav a[aria-current="page"]::after {
   font-weight: 600;
   padding: 3px 10px;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--gold);
-  color: var(--goldt);
+  border: 1px solid var(--cobalt);
+  color: var(--cobalt);
   margin-bottom: 12px;
   width: fit-content;
   letter-spacing: 0.3px;
 }
 
 .tag.n {
-  background: var(--gold);
-  color: #14213D;
-  border-color: var(--gold);
+  background: var(--cobalt);
+  color: #FFFFFF;
+  border-color: var(--cobalt);
 }
 
 .tag.live {
@@ -720,7 +645,7 @@ nav a[aria-current="page"]::after {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--navy), var(--gold));
+  background: linear-gradient(90deg, #0047AB, #2563EB);
 }
 
 .lc-header {
@@ -787,29 +712,26 @@ nav a[aria-current="page"]::after {
 
 /* In-range selected stages */
 .trk-btn.in {
-  background: var(--navy);
-  color: var(--onnavy);
-  border-color: var(--navy);
+  background: var(--cobalt);
+  color: #FFFFFF;
+  border-color: var(--cobalt);
 }
 
 .trk-btn.in .trk-num {
-  color: var(--gold);
+  color: #BFDBFE;
   opacity: 1;
 }
 
 /* Start / End Boundary Indicators */
-.trk-btn.start-stage {
-  box-shadow: inset 0 -4px var(--gold), 0 4px 12px rgba(20, 33, 61, 0.2);
-}
-
+.trk-btn.start-stage,
 .trk-btn.end {
-  box-shadow: inset 0 -4px var(--gold), 0 4px 12px rgba(20, 33, 61, 0.2);
+  box-shadow: inset 0 -4px #1D4ED8, 0 4px 14px rgba(0, 71, 171, 0.35);
 }
 
 /* Scope Output Card */
 .out {
-  background: var(--bg);
-  border-left: 4px solid var(--gold);
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--cobalt);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 14px 18px;
   margin-top: 18px;
@@ -834,8 +756,8 @@ nav a[aria-current="page"]::after {
   font-weight: 600;
   padding: 2px 8px;
   border-radius: var(--radius-pill);
-  background: var(--gold-light);
-  color: var(--goldt);
+  background: var(--cobalt-light);
+  color: var(--cobalt);
   margin-right: 8px;
 }
 
@@ -866,8 +788,8 @@ th, td {
 }
 
 th {
-  background: var(--navy);
-  color: var(--onnavy);
+  background: var(--cobalt);
+  color: #FFFFFF;
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.88rem;
@@ -880,22 +802,22 @@ tr:last-child td {
 }
 
 tbody tr:hover td {
-  background: var(--gold-light);
+  background: var(--cobalt-light);
 }
 
 /* Highlighted Row for Hubcrew */
 tr.hb td {
-  background: rgba(184, 137, 43, 0.12) !important;
+  background: rgba(0, 71, 171, 0.08) !important;
   font-weight: 600;
   color: var(--ink);
-  border-top: 2px solid var(--gold);
-  border-bottom: 2px solid var(--gold);
+  border-top: 2px solid var(--cobalt);
+  border-bottom: 2px solid var(--cobalt);
 }
 
 tr.hb td:first-child {
   position: relative;
   font-weight: 700;
-  color: var(--goldt);
+  color: var(--cobalt);
 }
 
 /* ==========================================================================
@@ -1042,7 +964,7 @@ footer {
   color: var(--onnavy);
   padding: 48px 0 36px;
   font-size: 0.92rem;
-  border-top: 1px solid var(--gold-border);
+  border-top: 2px solid var(--cobalt);
   margin-top: auto;
 }
 
@@ -1059,7 +981,7 @@ footer .w {
   flex-wrap: wrap;
   gap: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid rgba(246, 241, 231, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-brand {
@@ -1093,7 +1015,7 @@ footer .w {
 }
 
 .footer-nav a:hover {
-  color: var(--gold);
+  color: #60A5FA;
 }
 
 .footer-bottom {

@@ -8,7 +8,7 @@ Hubcrew runs your hiring from sourcing to probation confirmation. Tech-first RPO
 
 ## 🌟 Key Features
 
-- **Parchment, Navy & Warm Gold Design System:** Authentic editorial palette using Fraunces and Inter typography, with full light and dark mode support.
+- **White & Cobalt Blue Design System:** Authentic editorial palette using Fraunces and Inter typography on a crisp white base with vibrant cobalt blue accents.
 - **Interactive Lifecycle Scope Picker:**
   - 6 modular stages: Sourcing, Screening, Interview scheduling, Offer and negotiation, Joining and onboarding, Probation tracking.
   - Interactive stage range selector that computes scope package (Single-stage, Focused bundle, Full-cycle bundle), pricing guidance, and deep-links directly to the inquiry form with pre-populated scope.
