@@ -19,9 +19,29 @@
       border-radius: var(--radius-lg);
       border: 1px solid var(--line);
       box-shadow: var(--shadow-lg);
-      padding: 48px;
+      padding: 40px;
       max-width: 1040px;
       margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 0;
+      }
+      .guideline-sheet {
+        padding: 24px 16px;
+        border-radius: var(--radius-md);
+      }
+    }
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 18px;
+      margin-top: 14px;
+    }
+    @media (min-width: 768px) {
+      .rule-card-full {
+        grid-column: span 2;
+      }
     }
     .palette-grid {
       display: grid;
@@ -66,7 +86,7 @@
 
   <div class="w">
     <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-      <a href="index.html#home" class="btn o">
+      <a href="index.html" class="btn o">
         ← Back to Website
       </a>
       <button onclick="window.print()" class="btn">
@@ -97,8 +117,8 @@
       <!-- Section 1: Logo Lockups -->
       <section style="margin-bottom: 44px;">
         <h2>1. Official Logo Lockups</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 14px;">
-          <div class="rule-card" style="text-align: center; background: #FFFFFF; grid-column: span 2;">
+        <div class="logo-grid">
+          <div class="rule-card rule-card-full" style="text-align: center; background: #FFFFFF;">
             <img src="assets/hubcrew-official-logo.jpg" alt="Official HubCrew Logo" style="max-height: 70px; max-width: 100%; margin: 16px auto; display: block;">
             <div style="font-weight: 700; font-size: 0.95rem; color: #0A46C2;">Official Master Brand Lockup</div>
             <p style="font-size: 0.82rem; color: #50607A; margin-top: 4px;">Official signature logo featuring HC monogram, HubCrew wordmark, and Talent Solutions descriptor</p>
@@ -169,8 +189,8 @@
 
       <!-- Section 3: Typography -->
       <section style="margin-bottom: 44px;">
-        <h2>3. Typography & Hierarchy</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 14px;">
+        <h2>3. Typography &amp; Hierarchy</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin-top: 14px;">
           <div class="rule-card">
             <span class="tag">Headings & Brand</span>
             <h3 style="font-size: 1.8rem; margin: 10px 0;">Fraunces Serif</h3>

@@ -3,36 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>HubCrew — Be heard, Be hired | Recruitment Process Outsourcing (RPO)</title>
-  <meta name="description" content="HubCrew runs your hiring from sourcing to probation confirmation. Tech-first RPO for startups, MSMEs and enterprises across India, Africa and Southeast Asia.">
-  <meta name="keywords" content="HubCrew, Be heard Be hired, RPO Hyderabad, Tech Staffing, Recruitment Process Outsourcing, India, Africa, Southeast Asia">
-  
-  <!-- Open Graph -->
+  <title>HubCrew — Be heard, Be hired | Tech-First RPO</title>
+  <meta name="description" content="Tech-first recruitment process outsourcing (RPO) for startups, MSMEs and enterprises across India, Africa and Southeast Asia. We stay through probation.">
+  <link rel="canonical" href="https://hubcrew.in/">
+
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hubcrew.in/">
   <meta property="og:title" content="HubCrew — Be heard, Be hired | Tech-First RPO">
   <meta property="og:description" content="We run your hiring from first search to confirmed hire across India, Africa and Southeast Asia.">
-  <meta property="og:image" content="assets/logo.svg">
+  <meta property="og:image" content="https://hubcrew.in/assets/og-image.png">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HubCrew — Be heard, Be hired | Tech-First RPO">
+  <meta name="twitter:description" content="Tech-first recruitment outsourcing across India, Africa and Southeast Asia.">
+  <meta name="twitter:image" content="https://hubcrew.in/assets/og-image.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Google Fonts: Fraunces & Inter -->
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HubCrew Talent Solutions LLP",
+    "alternateName": "HubCrew",
+    "url": "https://hubcrew.in",
+    "logo": "https://hubcrew.in/assets/hubcrew-official-logo.jpg",
+    "description": "Tech-first recruitment process outsourcing partner for startups, MSMEs and enterprises across India, Africa and Southeast Asia.",
+    "email": "rini@hubcrewtalent.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bridge Paramount, Musheerabad",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500020",
+      "addressCountry": "IN"
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
-  <!-- =========================================================================
-       Header & Navigation
-       ========================================================================= -->
+  <!-- Header -->
   <header>
     <div class="w">
-      <a class="logo" href="#home" id="brandLogo" aria-label="HubCrew — Be heard, Be hired">
-        <img src="assets/hubcrew-icon.png" alt="HubCrew" class="logo-mark-img">
+      <a class="logo" href="/" id="brandLogo" aria-label="HubCrew — Be heard, Be hired">
+        <img src="assets/hubcrew-icon.png" alt="HubCrew Logo" class="logo-mark-img">
         <div class="logo-text-block">
           <div class="logo-brandname">HubCrew</div>
           <div class="logo-tagline">Be heard, Be hired</div>
@@ -40,501 +68,249 @@
       </a>
 
       <nav id="nav" aria-label="Main Navigation">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Who we serve</a>
-        <a href="#how">How we work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#dev">Dev brief</a>
+        <a href="/" class="active" aria-current="page">Home</a>
+        <a href="/services">Services</a>
+        <a href="/who-we-serve">Who we serve</a>
+        <a href="/how-we-work">How we work</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn sm" href="#contact">Start a hiring brief</a>
+        <a class="btn sm" href="/contact">Start a hiring brief</a>
 
-        <!-- Mobile Nav Toggle -->
-        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open menu" aria-expanded="false">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+        <!-- Mobile Menu Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line class="line-top" x1="3" y1="6" x2="21" y2="6"></line>
+            <line class="line-mid" x1="3" y1="12" x2="21" y2="12"></line>
+            <line class="line-bot" x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer -->
-    <div class="mobile-nav-drawer" id="mobileNavDrawer">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Who we serve</a>
-      <a href="#how">How we work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#dev">Dev brief</a>
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+      <a href="/" class="active" aria-current="page">Home</a>
+      <a href="/services">Services</a>
+      <a href="/who-we-serve">Who we serve</a>
+      <a href="/how-we-work">How we work</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <div class="mobile-drawer-cta">
+        <a class="btn" href="/contact">Start a hiring brief</a>
+      </div>
     </div>
   </header>
 
-  <!-- =========================================================================
-       Main Content (Switched via URL hash #home, #services, etc.)
-       ========================================================================= -->
-  <main id="mainContent">
+  <!-- Mobile Backdrop -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
-    <!-- 1. HOME PAGE -->
-    <section class="pg on" id="home">
-      <div class="w">
-        <div class="hero">
-          <div class="hero-tagline">“Be heard, Be hired” · Tech-first RPO across India, Africa &amp; Southeast Asia</div>
-          <h1>We run your hiring, from first search to confirmed hire.</h1>
-          <p>Hubcrew is a recruitment process outsourcing partner for startups, MSMEs and enterprises. We own every stage of the hiring cycle, starting with tech, engineering, product and data roles.</p>
-          <div class="row">
-            <a class="btn" href="#contact">Start a hiring brief</a>
-            <a class="btn o" href="#services">See our services</a>
-          </div>
+  <!-- Main Content -->
+  <main>
+    <div class="w">
+
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="heroHeading">
+        <div class="hero-tagline">Be heard, Be hired · Tech-First RPO</div>
+        <h1 id="heroHeading">We run your hiring, from first search to confirmed hire.</h1>
+        <p>Tech-first RPO for startups, MSMEs and enterprises across India, Africa and Southeast Asia.</p>
+        
+        <div class="row">
+          <a class="btn" href="/contact">Start a hiring brief</a>
+          <a class="btn o" href="/services">See our services</a>
         </div>
 
-        <!-- Interactive Lifecycle Picker -->
-        <div class="lc">
-          <div class="lc-header">
-            <h2>Decide how much of hiring we own</h2>
-            <p>Tap the stage where we start, then the stage where we stop. Every combination is a package we offer.</p>
+        <!-- 6-Stage Horizontal Line Graphic -->
+        <div class="hero-flow-wrap" aria-label="Full-Cycle Hiring Stages">
+          <div class="hero-flow-header">
+            <span class="hero-flow-title">Full Hiring Lifecycle Ownership</span>
+            <span class="badge-amber">Confirmed Probation</span>
           </div>
-          
-          <div class="trk" id="trk" role="group" aria-label="Recruitment Stages"></div>
-          
-          <div class="out" id="out" aria-live="polite"></div>
-          
-          <div class="row" style="margin-top: 18px;">
-            <a class="btn" href="#contact" id="lcgo">Discuss this scope</a>
-          </div>
-        </div>
-
-        <!-- Core Value Pillars -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>Why teams hand hiring to Hubcrew</h2>
-          </div>
-          <div class="g">
-            <div class="c">
-              <h3>One partner through probation</h3>
-              <p>We stay with the hire until probation is confirmed, so you don't get a shortlist and then a gap.</p>
+          <div class="hero-flow-track">
+            <div class="hero-flow-node">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Source</span>
             </div>
-            <div class="c">
-              <h3>Tech-first depth</h3>
-              <p>Engineering, SaaS and product, UI/UX, data operations, data science and AI roles are our starting focus.</p>
+            <span class="hero-flow-arrow">→</span>
+            <div class="hero-flow-node">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Screen</span>
             </div>
-            <div class="c">
-              <h3>Senior judgement, lean pricing</h3>
-              <p>A founder-led boutique that prices for startups and MSMEs, not only for large enterprises.</p>
+            <span class="hero-flow-arrow">→</span>
+            <div class="hero-flow-node">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Interview</span>
             </div>
-          </div>
-        </div>
-
-        <!-- Geographic Corridor Band -->
-        <div class="band">
-          <div class="w" style="padding: 0 40px;">
-            <h2>Hiring in India, Africa or Southeast Asia?</h2>
-            <p>Our delivery base is Hyderabad, with core corridors in Africa, Indonesia, Thailand and Malaysia.</p>
-            <div class="band-corridors">
-              <span class="band-corridor-pill">🇮🇳 India (Hyderabad Base)</span>
-              <span class="band-corridor-pill">🌍 Africa Corridor</span>
-              <span class="band-corridor-pill">🇮🇩 Indonesia</span>
-              <span class="band-corridor-pill">🇹🇭 Thailand</span>
-              <span class="band-corridor-pill">🇲🇾 Malaysia</span>
+            <span class="hero-flow-arrow">→</span>
+            <div class="hero-flow-node">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Offer</span>
             </div>
-            <div class="row" style="margin-top: 24px;">
-              <a class="btn" href="#contact">Talk to us</a>
+            <span class="hero-flow-arrow">→</span>
+            <div class="hero-flow-node">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Onboard</span>
+            </div>
+            <span class="hero-flow-arrow">→</span>
+            <div class="hero-flow-node probation">
+              <span class="hero-flow-dot"></span>
+              <span class="hero-flow-label">Probation</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 2. SERVICES PAGE -->
-    <section class="pg" id="services">
-      <div class="w">
-        <div class="hero">
-          <h1>Services</h1>
-          <p>Start with recruitment outsourcing. Add verification, HR, branding and training as you grow.</p>
+      <!-- Interactive Scope Picker -->
+      <section class="lc" aria-labelledby="scopePickerHeading">
+        <div class="lc-header">
+          <h2 id="scopePickerHeading">Decide how much of hiring we own</h2>
+          <p>Pick where we start and where we stop.</p>
         </div>
-
-        <!-- 8 Business Unit Cards -->
-        <div class="g" id="bus"></div>
-
-        <!-- Pricing & Commercial Models -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>How you can pay</h2>
-            <p>Final commercial terms are agreed per mandate after a scoping call.</p>
-          </div>
-          <div class="sc">
-            <table>
-              <thead>
-                <tr>
-                  <th style="width: 32%;">Model</th>
-                  <th>Best for</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><b>Success fee per hire</b></td>
-                  <td>Occasional or role-specific hiring with no upfront commitment</td>
-                </tr>
-                <tr>
-                  <td><b>Monthly RPO retainer</b></td>
-                  <td>Continuous hiring where Hubcrew works as your outsourced TA team</td>
-                </tr>
-                <tr>
-                  <td><b>Dedicated recruiter pod</b></td>
-                  <td>Startups scaling fast who want an embedded team without fixed headcount</td>
-                </tr>
-                <tr>
-                  <td><b>Retained search fee</b></td>
-                  <td>Confidential CXO, VP and Director mandates</td>
-                </tr>
-                <tr>
-                  <td><b>Per-check or project fee</b></td>
-                  <td>Verification, HR documentation, branding and training work</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="row" style="margin-top: 24px;">
-            <a class="btn" href="#contact">Discuss commercial terms</a>
-          </div>
+        
+        <div class="trk" id="trk" role="group" aria-label="Recruitment Stages"></div>
+        <div class="out" id="out" aria-live="polite"></div>
+        
+        <div class="row" style="margin-top: 20px;">
+          <a class="btn" href="/contact" id="lcgo">Discuss this scope</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 3. WHO WE SERVE PAGE -->
-    <section class="pg" id="clients">
-      <div class="w">
-        <div class="hero">
-          <h1>Who we serve</h1>
-          <p>One accountable partner, whatever your size.</p>
+      <!-- 3 Why Hubcrew Icon Cards -->
+      <section class="sec" aria-labelledby="whyHeading">
+        <div class="sec-title-wrap">
+          <h2 id="whyHeading">Why teams hand hiring to HubCrew</h2>
         </div>
-
-        <!-- Segments Grid -->
-        <div class="g" id="seg"></div>
-
-        <!-- Roles We Hire For -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>Roles we hire for</h2>
-          </div>
-          <div class="g">
-            <div class="c">
-              <span class="tag n">Active Practice</span>
-              <h3>Now: tech-first</h3>
-              <ul>
-                <li><b>Engineering:</b> full-stack, backend, mobile, DevOps/SRE, QA</li>
-                <li><b>SaaS and product:</b> product management, growth, customer success</li>
-                <li><b>Design:</b> UI/UX and product design</li>
-                <li><b>Data operations:</b> analytics and business intelligence</li>
-                <li><b>AI & Data Science:</b> machine learning, data engineering, and generative AI</li>
-              </ul>
-            </div>
-            <div class="c">
-              <span class="tag">Upcoming Practice</span>
-              <h3>Next: non-tech</h3>
-              <p>Sales, operations, finance and HR roles once the tech engine is established.</p>
-              <p style="margin-top: 14px; color: var(--mut); font-size: 0.9rem;">
-                Providing seamless corporate, go-to-market, and functional scaling for our embedded partners.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Geographies -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>Where we hire</h2>
-            <p>Anchor delivery in Hyderabad with established corridors across key emerging markets.</p>
-          </div>
-          <div class="g" id="geo"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. HOW WE WORK PAGE -->
-    <section class="pg" id="how">
-      <div class="w">
-        <div class="hero">
-          <h1>How we work</h1>
-          <p>Six stages. You can hand us all of them or just the ones you need.</p>
-        </div>
-
-        <!-- Process Stages List -->
-        <div id="stg"></div>
-
-        <!-- Comparison Table -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>Why not a staffing major, a boutique or a search firm?</h2>
-          </div>
-          <div class="sc">
-            <table>
-              <thead>
-                <tr>
-                  <th style="width: 28%;">Option</th>
-                  <th style="width: 36%;">Strength</th>
-                  <th>Gap</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><b>Global staffing majors</b></td>
-                  <td>Scale and compliance</td>
-                  <td>Process-heavy; slower on niche tech</td>
-                </tr>
-                <tr>
-                  <td><b>Boutique tech recruiters</b></td>
-                  <td>Speed and tech shortlists</td>
-                  <td>Stop at shortlisting</td>
-                </tr>
-                <tr>
-                  <td><b>Executive search firms</b></td>
-                  <td>Leadership pedigree</td>
-                  <td>Premium retainers; CXO band only</td>
-                </tr>
-                <tr class="hb">
-                  <td><b>Hubcrew</b></td>
-                  <td>Full lifecycle, tech speed, senior judgement</td>
-                  <td>Priced for the mid-market</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. ABOUT PAGE -->
-    <section class="pg" id="about">
-      <div class="w">
-        <div class="hero">
-          <h1>About Hubcrew</h1>
-          <p>We want to be a top-tier, quality-led, end-to-end talent partner for MSMEs, startups and global enterprises across India, Africa and Southeast Asia.</p>
-        </div>
-
-        <!-- Founders & Leadership -->
         <div class="g">
           <div class="c">
-            <h3>Rini Shah Purohit</h3>
-            <span class="tag">Designated Partner, Business and Delivery</span>
-            <p>5+ years in full-cycle technical recruiting. Senior Talent Acquisition Specialist at HighLevel: 80+ senior engineering roles closed at 95.2% offer-to-join conversion. Built a Generative AI hiring function from zero to 25+ specialists in 6 months.</p>
+            <div class="icon-card-header">
+              <svg class="icon-card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+              <h3>One partner through probation</h3>
+            </div>
+            <p>We stay until probation is confirmed.</p>
           </div>
           <div class="c">
-            <h3>Krishna Saurabh Purohit</h3>
-            <span class="tag">Designated Partner, Finance, Regulatory and Strategy</span>
-            <p>10+ years across clean mobility, EV and energy transition, covering strategy, compliance and business structuring.</p>
-          </div>
-        </div>
-
-        <!-- Roadmap -->
-        <div class="sec">
-          <div class="sec-title-wrap">
-            <h2>Where we are headed</h2>
-          </div>
-          <div class="g">
-            <div class="c">
-              <span class="tag n">Live</span>
-              <h3>Core RPO</h3>
-              <p>Sourcing, screening and interview scheduling.</p>
-            </div>
-            <div class="c">
-              <span class="tag">Next</span>
-              <h3>Offer to onboarding, contract-to-hire, verification, branding</h3>
-              <p>Full lifecycle joining readiness and risk-free scaling models.</p>
-            </div>
-            <div class="c">
-              <span class="tag">Later</span>
-              <h3>Executive search, HR advisory, training and a talent marketplace</h3>
-              <p>Comprehensive strategic people ecosystem for high-growth enterprises.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. CONTACT PAGE -->
-    <section class="pg" id="contact">
-      <div class="w">
-        <div class="hero">
-          <h1>Start a hiring brief</h1>
-          <p>Tell us what you need. We reply within one business day with a scoping call proposal.</p>
-        </div>
-
-        <div class="contact-layout">
-          <!-- Form Section -->
-          <div id="fm">
-            <div class="note">
-              <b>Developer Notice:</b> This form is currently configured as a front-end client interface. Wire to your email server or CRM endpoint as specified in the Dev brief.
-            </div>
-
-            <form onsubmit="return false;">
-              <label for="n">Your name</label>
-              <input id="n" type="text" placeholder="e.g. Priyesh Sharma" autocomplete="name">
-
-              <label for="e">Work email</label>
-              <input id="e" type="email" placeholder="priyesh@company.com" autocomplete="email" required>
-
-              <label for="co">Company</label>
-              <input id="co" type="text" placeholder="e.g. Acme Technologies" autocomplete="organization">
-
-              <label for="sc">What do you need?</label>
-              <select id="sc"></select>
-
-              <label for="rl">Roles and volume</label>
-              <textarea id="rl" rows="4" placeholder="e.g. 5 backend engineers in 60 days"></textarea>
-
-              <div class="row">
-                <button type="submit" class="btn" id="go">Send brief</button>
-              </div>
-            </form>
-
-            <div id="ok" style="margin-top: 18px;" role="status" aria-live="polite"></div>
-          </div>
-
-          <!-- Contact Aside Card -->
-          <aside class="contact-aside-card">
-            <h3>Hubcrew Delivery Hub</h3>
-            <p>Our talent advisors and sourcing pods operate directly out of Hyderabad, serving international corridors.</p>
-
-            <div class="contact-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
+            <div class="icon-card-header">
+              <svg class="icon-card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+                <rect x="7" y="7" width="10" height="10" rx="2"/>
               </svg>
-              <div>
-                <b>Registered Address:</b><br>
-                Hubcrew Talent Solutions LLP<br>
-                6-1-19/A/302, Bridge Paramount,<br>
-                Walkertown, Musheerabad,<br>
-                Hyderabad 500020, Telangana, India
-              </div>
+              <h3>Tech-first depth</h3>
             </div>
-
-            <div class="contact-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
+            <p>Engineering, product, design, data and AI.</p>
+          </div>
+          <div class="c">
+            <div class="icon-card-header">
+              <svg class="icon-card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
               </svg>
-              <div>
-                <b>Direct Inquiries:</b><br>
-                hello@hubcrewtalent.com
-              </div>
+              <h3>Senior judgement, lean pricing</h3>
             </div>
-
-            <div class="contact-meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <line x1="6" y1="8" x2="6" y2="8"></line>
-                <line x1="10" y1="8" x2="18" y2="8"></line>
-                <line x1="6" y1="12" x2="18" y2="12"></line>
-              </svg>
-              <div>
-                <b>Corporate Identity:</b><br>
-                LLPIN: ACZ-1901
-              </div>
-            </div>
-          </aside>
+            <p>Founder-led, priced for startups and MSMEs.</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 7. DEVELOPER BRIEF PAGE -->
-    <section class="pg" id="dev">
-      <div class="w">
-        <div class="hero">
-          <h1>Developer brief</h1>
-          <p>Everything needed to build the production site from this draft. Remove this page before launch.</p>
+      <!-- Stat Strip (Facts from verified site data) -->
+      <section class="stat-strip" aria-label="Key Facts">
+        <div class="stat-chip">
+          <span class="stat-num">3</span>
+          <span class="stat-lbl">Regions (India · Africa · SEA)</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-num">6</span>
+          <span class="stat-lbl">Modular Hiring Stages</span>
+        </div>
+        <div class="stat-chip amber">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Probation-Confirmed Hires</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-num" style="font-size:1.45rem;">Founder-Led</span>
+          <span class="stat-lbl">Senior TA Judgement</span>
+        </div>
+      </section>
+
+      <!-- Geographic Coverage Graphic Map -->
+      <section class="sec" aria-labelledby="geoHeading">
+        <div class="sec-title-wrap">
+          <h2 id="geoHeading">Hiring in India, Africa or Southeast Asia?</h2>
+          <p class="map-africa-line">Pan-African recruitment professionals helping companies access the right talent for their business in Africa.</p>
         </div>
 
-        <div class="sc">
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 24%;">Item</th>
-                <th>Spec</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b>Sitemap</b></td>
-                <td>Home, Services, Who we serve, How we work, About, Contact. Optional later: Careers, Insights (blog).</td>
-              </tr>
-              <tr>
-                <td><b>Home</b></td>
-                <td>Hero, interactive lifecycle picker (6 stages: pick start and end, shows package type and passes scope to Contact), 3 value points, CTA band.</td>
-              </tr>
-              <tr>
-                <td><b>Services</b></td>
-                <td>8 business-unit cards from one data list (name, tagline, bullets, best-fit, commercial model, phase). Only phase 1 is "Available now"; others show "Coming soon".</td>
-              </tr>
-              <tr>
-                <td><b>Contact</b></td>
-                <td>Fields: name, work email, company, need (dropdown), roles and volume. Needs validation, spam protection, email to Hubcrew inbox, CRM/Sheet log, confirmation message.</td>
-              </tr>
-              <tr>
-                <td><b>CMS</b></td>
-                <td>Services, segments, stages and team should be editable without code.</td>
-              </tr>
-              <tr>
-                <td><b>SEO and tracking</b></td>
-                <td>Separate URLs per page (this draft uses #hash only for demo), meta titles and descriptions, sitemap.xml, Google Analytics, LinkedIn Insight tag.</td>
-              </tr>
-              <tr>
-                <td><b>Design</b></td>
-                <td>Fraunces headings, Inter body. Signature white base and cobalt blue. Mobile-first.</td>
-              </tr>
-              <tr>
-                <td><b>Not on the site</b></td>
-                <td>No pricing figures, PAN/TAN, capital or profit split, or internal strategy slides.</td>
-              </tr>
-              <tr>
-                <td><b>Placeholders to confirm</b></td>
-                <td>Official domain (hubcrew.in), contact email (hello@hubcrew.in), client testimonials and verified metrics.</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="map-visual-wrap">
+          <img src="assets/hubcrew-map.svg" alt="HubCrew Geographic Coverage: Hyderabad delivery base with pan-African and Southeast Asian hiring" loading="lazy">
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Trust Placeholder (Reserved slot, hidden until client figures are verified) -->
+      <!-- <div class="trust-strip-placeholder" style="display:none;" aria-hidden="true"></div> -->
+
+      <!-- Closing CTA Band -->
+      <section class="band" aria-labelledby="ctaBandHeading">
+        <div class="band-content">
+          <h2 id="ctaBandHeading">Ready to hand over hiring?</h2>
+          <p>Tell us what you need. We reply within one business day.</p>
+          <div class="row" style="margin-top: 20px;">
+            <a class="btn" href="/contact">Start a hiring brief</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- =========================================================================
-       Footer
-       ========================================================================= -->
+  <!-- Footer -->
   <footer>
     <div class="w">
       <div class="footer-top">
+        <!-- Col 1: Brand -->
         <div class="footer-brand">
           <div class="footer-logo-lockup">
-            <img src="assets/hubcrew-icon.png" alt="HubCrew" class="logo-mark-img" style="filter: brightness(0) invert(1); height: 32px;">
+            <img src="assets/hubcrew-icon.png" alt="HubCrew Logo" class="logo-mark-img" style="filter: brightness(0) invert(1); height: 32px;">
             <h4>HubCrew</h4>
           </div>
           <p class="footer-tagline-motto">“Be heard, Be hired”</p>
-          <p><b>Hubcrew Talent Solutions LLP</b> · LLPIN: ACZ-1901</p>
-          <p>6-1-19/A/302, Bridge Paramount, Walkertown, Musheerabad, Hyderabad 500020, Telangana, India</p>
-          <p>hello@hubcrew.in</p>
+          <p>Tech-first recruitment process outsourcing and strategic talent advisory.</p>
         </div>
 
+        <!-- Col 2: Navigation -->
         <div class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#clients">Who we serve</a>
-          <a href="#how">How we work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#dev">Dev brief</a>
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/who-we-serve">Who we serve</a>
+          <a href="/how-we-work">How we work</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
+
+        <!-- Col 3: Contact Details -->
+        <div>
+          <h5 style="color:#FFFFFF; margin:0 0 10px; font-size:0.95rem;">Contact</h5>
+          <p style="margin:4px 0;"><a href="mailto:rini@hubcrewtalent.com" style="color:#60A5FA; font-weight:600;">rini@hubcrewtalent.com</a></p>
+          <p style="margin:4px 0; color:var(--onnavy-mut); font-size:0.86rem;">
+            Hubcrew Talent Solutions LLP<br>
+            Bridge Paramount, Musheerabad<br>
+            Hyderabad 500020, India
+          </p>
+        </div>
+
+        <!-- Col 4: Find Us On (CMS-driven, hidden when URLs are empty) -->
+        <div id="findUsOnContainer"></div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Hubcrew Talent Solutions LLP. All rights reserved.</div>
-        <div>Tech-First Recruitment Process Outsourcing & Strategic Talent Advisory</div>
+        <div>© 2026 Hubcrew Talent Solutions LLP · LLPIN: ACZ-1901</div>
+        <div>
+          <a href="/privacy" style="color:var(--onnavy-mut); margin-right:12px;">Privacy policy</a>
+          <a href="/terms" style="color:var(--onnavy-mut);">Terms of service</a>
+        </div>
       </div>
     </div>
   </footer>

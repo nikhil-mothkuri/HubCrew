@@ -1,36 +1,38 @@
-# Hubcrew Talent Solutions
+# HubCrew Talent Solutions
 
-Official website for **Hubcrew Talent Solutions LLP** (Hyderabad, India).
+Official website for **HubCrew Talent Solutions LLP** (Hyderabad, India).  
+Live Domain: [hubcrew.in](https://hubcrew.in) · Official Email: `rini@hubcrewtalent.com`
 
-Hubcrew runs your hiring from sourcing to probation confirmation. Tech-first RPO for startups, MSMEs and enterprises across India, Africa and Southeast Asia.
+HubCrew runs your hiring from sourcing to probation confirmation. Tech-first RPO for startups, MSMEs and enterprises across India, Africa and Southeast Asia.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Key Features (Version 2.0 Revamp)
 
-- **White & Cobalt Blue Design System:** Authentic editorial palette using Fraunces and Inter typography on a crisp white base with vibrant cobalt blue accents.
-- **Interactive Lifecycle Scope Picker:**
-  - 6 modular stages: Sourcing, Screening, Interview scheduling, Offer and negotiation, Joining and onboarding, Probation tracking.
-  - Interactive stage range selector that computes scope package (Single-stage, Focused bundle, Full-cycle bundle), pricing guidance, and deep-links directly to the inquiry form with pre-populated scope.
-- **8 Core Business Units (Services):**
-  - RPO: end-to-end recruitment (Available now)
-  - Contract-to-hire and talent-as-a-service (Coming soon)
-  - Background verification (Coming soon)
-  - Employer branding (Coming soon)
-  - Executive and leadership search (Coming soon)
-  - HR consulting and documentation (Coming soon)
-  - Corporate training (Coming soon)
-  - Talent marketplace (Coming soon)
-- **Transparent Commercial Models:**
-  - Success fee per hire
-  - Monthly RPO retainer
-  - Dedicated recruiter pod
-  - Retained search fee
-  - Per-check or project fee
-- **Strategic Corridors:** Anchor delivery base in Hyderabad, serving corridors across India, Africa, Indonesia, Thailand, and Malaysia.
-- **Competitive Comparison Matrix:** Evaluates staffing majors, boutique tech recruiters, executive search firms vs Hubcrew.
-- **Founders & Leadership:** Full credentials for designated partners **Rini Shah Purohit** (Business & Delivery) and **Krishna Saurabh Purohit** (Finance, Regulatory & Strategy).
-- **Embedded Developer Brief:** Build specifications, placeholders, and SEO specs directly accessible on `#dev`.
+- **White & Cobalt Blue Design System:** Authentic editorial palette using Fraunces headings and Inter typography on a crisp white base with vibrant cobalt blue (`#0047AB`) and warm amber accent badges.
+- **Real Indexable URLs & Full Multi-Page SEO:** 
+  - Real URLs: `/` (Home), `/services`, `/who-we-serve`, `/how-we-work`, `/about`, `/contact`, `/privacy`, `/terms`.
+  - Canonical URLs, unique `<title>` and `<meta name="description">` per page.
+  - Organization, Service, AboutPage, and HowTo structured data JSON-LD schemas.
+  - `sitemap.xml` and `robots.txt`.
+  - 1200×630 Open Graph preview image (`assets/og-image.png`).
+- **Interactive Lifecycle Scope Picker (Home):**
+  - 6 modular stages: Sourcing, Screening, Interviewing, Offer, Onboarding, Probation.
+  - Stage range selector computing package scope and deep-linking directly into `/contact` with prefilled selection.
+- **Visual-First Process & Capabilities:**
+  - 6-Stage Stepper with outputs on How We Work (`how-we-work.html`).
+  - Comparative Tick Matrix benchmarking Staffing Majors, Boutiques, Search Firms vs HubCrew.
+  - Graphic Corridor Map (`assets/hubcrew-map.svg`) illustrating the Hyderabad delivery base, Pan-African coverage, and Southeast Asian corridors.
+  - 5 Payment Model Cards on Services (`services.html`) with expandable data-driven unit details.
+  - 3-Stage Capability Roadmap (Live → Next → Later) located exclusively on Services.
+- **Founder & Leadership Profiles (About):**
+  - Recruitment and industry credentials only (no past employer names, employment dates, or employer-linked metrics).
+  - Designated Partners: **Rini Shah Purohit** (Business and Delivery) and **Krishna Saurabh Purohit** (Finance, Regulatory and Strategy).
+- **Start a Hiring Brief (Contact):**
+  - 7-field form with work email validation, location multi-selector, and honeypot spam protection.
+  - Form submission wired to `rini@hubcrewtalent.com`.
+- **Dynamic Social & Job-Board Presence:**
+  - Footer "Find us on" block wired to central config in `js/main.js` (gracefully hidden until profiles are live).
 
 ---
 
@@ -38,16 +40,33 @@ Hubcrew runs your hiring from sourcing to probation confirmation. Tech-first RPO
 
 ```
 HubCrew/
-├── index.html              # Main website (Single-page static app with hash routing)
-├── brand-guideline.html    # Brand Identity & Style Guide
+├── index.html              # Home page (/)
+├── services.html           # Services page (/services)
+├── services/index.html     # Directory index for /services/
+├── who-we-serve.html       # Who we serve (/who-we-serve)
+├── who-we-serve/index.html # Directory index for /who-we-serve/
+├── how-we-work.html        # How we work (/how-we-work)
+├── how-we-work/index.html  # Directory index for /how-we-work/
+├── about.html              # About page (/about)
+├── about/index.html        # Directory index for /about/
+├── contact.html            # Start a hiring brief (/contact)
+├── contact/index.html      # Directory index for /contact/
+├── privacy.html            # Privacy policy (/privacy)
+├── privacy/index.html      # Directory index for /privacy/
+├── terms.html              # Terms of service (/terms)
+├── terms/index.html        # Directory index for /terms/
+├── 404.html                # Not found fallback
+├── sitemap.xml             # XML Sitemap
+├── robots.txt              # Search engine directives
+├── CNAME                   # Custom domain (hubcrew.in)
 ├── css/
 │   └── style.css           # Vanilla CSS design system & responsive layout
 ├── js/
-│   └── main.js             # Route switcher, lifecycle picker & theme logic
+│   └── main.js             # Interactive engine, lifecycle picker, & config
 └── assets/
-    ├── logo.svg            # Primary brand logo (Parchment / Light)
-    ├── logo-dark.svg       # Dark theme brand logo (Midnight Navy)
-    ├── logo-icon.svg       # Brand monogram squircle icon
+    ├── og-image.png        # 1200x630 Open Graph preview image
+    ├── hubcrew-map.svg     # Stylized corridor map (Pan-Africa, India, SEA)
+    ├── hubcrew-icon.png    # HC Monogram squircle mark
     └── favicon.svg         # Favicon
 ```
 
@@ -55,12 +74,12 @@ HubCrew/
 
 ## 🚀 How to Run Locally
 
-Open `index.html` directly in any web browser (`file:///.../index.html#home`) or run any local HTTP server:
-
 ```bash
-# Using python
+# Using Python
 python -m http.server 8000
 
-# Using npx serve
+# Using Node.js
 npx serve .
 ```
+
+Open `http://localhost:8000` in any web browser.

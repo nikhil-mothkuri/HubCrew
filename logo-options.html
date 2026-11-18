@@ -21,20 +21,31 @@
     }
     .concepts-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 32px;
-      margin-bottom: 60px;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+      gap: 28px;
+      margin-bottom: 50px;
     }
     .concept-card {
       background: var(--bg-card-solid);
       border-radius: var(--radius-xl);
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-md);
-      padding: 36px;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       position: relative;
       transition: all var(--transition-normal);
+    }
+    @media (max-width: 640px) {
+      body {
+        padding: 24px 0 60px;
+      }
+      .concept-card {
+        padding: 22px 16px;
+      }
+      .preview-split {
+        grid-template-columns: 1fr;
+      }
     }
     .concept-card:hover {
       transform: translateY(-4px);
@@ -78,6 +89,13 @@
     .preview-box.dark {
       background: #070E1E;
       border-color: rgba(56, 139, 253, 0.2);
+    }
+    .preview-box img,
+    .preview-box svg {
+      max-width: 100%;
+      height: auto;
+      max-height: 75px;
+      object-fit: contain;
     }
     .concept-title {
       font-size: 1.4rem;
